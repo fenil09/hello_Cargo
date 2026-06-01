@@ -1,3 +1,4 @@
+
 use std::io::{self, Stdin};
 use rand::Rng;
 use std::cmp::Ordering; // using this enum to perform comparisions between two things in rust.
