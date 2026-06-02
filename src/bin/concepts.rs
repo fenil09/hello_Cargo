@@ -26,8 +26,10 @@ fn main(){
 
    let error_codes = [10,44,55];
 
-        customadd(88, 10); 
-        controlflow();
+       // customadd(88, 10); 
+        //controlflow();
+//        countdowncalcualtor();
+  ArrayAnalyzer();
 
 
 }
@@ -48,3 +50,33 @@ fn controlflow(){
   }
 
 }
+
+
+
+fn countdowncalcualtor(){
+ let mut counter = 10;
+
+
+  let final_result = loop{
+    counter = counter -1;
+    if(counter == 0){
+     break "Blastoff";
+    }
+  };
+  print!("{}", final_result);
+ 
+
+}
+
+
+fn ArrayAnalyzer(){
+ let fixedarray = [5000,11000,16000,8000];
+ let mut activedays = 0;
+  for i in fixedarray{
+   if(i >= 10000){
+      activedays = activedays+1  
+   }
+  }
+  print!("The Number of Active Days were {}", activedays);
+}
+
