@@ -1,0 +1,50 @@
+Ownership In Rust.
+-> Its a way of managing memory in Rust.
+
+Advantages of Ownership:
+1. Control over memory
+2. Error Free
+3. Faster Runtime
+4. Smaller program size.
+
+Cons;
+1. Slower write time its slower than manual memory management.
+
+
+// Ownership Rules In Rust
+1. Each value in Rust would be having a variable that would be calling its Owne
+2. There can be only one owner at a time.
+3. When the owner goes out of the scope the value will drop.
+
+// Ownership In Rust makes Rust to act as a Memory safe language without 
+having a need of an garbage collector.
+
+How Memory Handling works in General
+1. Some languages would be using a garbage collector which would be running and looking
+for the memory spaces which are no longer in use and then free them UP to make the code efficient
+
+2. Some languages would be relying upon explicit allocation and deallocation of memory but
+it becomes hard and makes the code more complex.
+
+3. In the case of Rust when it comes to memory management, the compiler checks for 
+a specific set of rules and if any rule is violated then the program would stop and wont compile.
+
+
+// There is a difference between String literal and String in Rust
+String literals are immutable and are generally used when we need something hardcoded whereas
+the String type is offered by the Rust library and when created is stored in the heap which makes
+it good for dynamic memory allocation. 
+
+In general we would be using it when we want would be taking inputs from the user.
+
+
+
+
+
+
+
+
+
+
+
+
